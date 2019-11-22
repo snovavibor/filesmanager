@@ -1,6 +1,6 @@
 <?php
 require_once('functions.php');
-//echo($_SERVER['HTTP_HOST']);
+
 
 /*точка отсчета */
 $start = $_SERVER['DOCUMENT_ROOT'];
