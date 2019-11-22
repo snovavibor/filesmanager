@@ -15,7 +15,7 @@ $('.short').each( function(){
             },
             success:function(result){
                
-                $('#info').html('').text(result).css('background','#B0C4DE');
+                $('#info').html('').html(result).css('background','#B0C4DE');
             }
         })
 
