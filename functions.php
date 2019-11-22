@@ -20,9 +20,16 @@ function cutStr($str)
 function render()
 {
     $str =  $_POST['el'];
-    $handle = fopen($str, "r");
+    
+    $tempstr = substr(strrchr($str, "."), 1);
+    if($tempstr =='zip'|| $tempstr == 'rar'){
+         echo "Это архив! пока что не распаковываю такие файлы ))";
+    }else{
+       $handle = fopen($str, "r");
     $length = filesize($str);
     $str1 = fread($handle, $length);
     fclose($handle);
-    echo ($str1);
+    echo ($str1); 
+    }
+    
 }

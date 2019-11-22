@@ -14,8 +14,6 @@ if($_POST){
     
 }
 
- 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,7 +74,7 @@ if(is_dir($host)){
                      <button class="longfolder"><span class="emojy">&#128193; </span><?php echo $entry  ?></button>
                      </li>
                      
-                    
+                    </form> 
                     <?php 
                 }else{
                     ?>
@@ -89,7 +87,7 @@ if(is_dir($host)){
                     <?php
                    
                 }?>
-                </form> 
+                
                   
                <?php
                 
