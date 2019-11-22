@@ -1,0 +1,91 @@
+html
+{
+    min-width: 1000px;
+}
+body
+{
+    background-color:#FFFFE0;
+}
+.d-flex
+{
+    display: flex;
+}
+.content
+{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.left,.rightBlock
+{
+    border: darkred 4px solid;
+    width: 38%;
+    text-align: center;
+}
+.rightBlock
+{
+    border: darkred 4px solid;
+    width: 55%;
+    text-align: center;
+}
+.infoPath
+{
+    font-size: 2rem;
+    background-color: cornflowerblue;
+    padding: .25rem;
+}
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    
+}
+form
+{
+    width: 100%;
+}
+button
+{
+    padding: .25rem;
+    width: 80%;
+    margin: .25rem;
+    cursor: pointer;
+    box-shadow: darkslateblue 1px 1px 5px;
+}
+.longfolder
+{
+    
+    background-color: aquamarine;
+}
+.short
+{
+    
+    background-color: burlywood;
+}
+.back
+{
+    
+    padding: .5rem;
+    background-color: rgb(173, 96, 245);
+}
+.nav
+{
+    display: flex;
+}
+.block
+{
+    width: 50%;
+}
+.emojy
+{
+    font-size: 1.2rem;
+   
+}
+
+.textfile
+{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    
+}
