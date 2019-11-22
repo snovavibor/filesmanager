@@ -1,0 +1,18 @@
+1) Три таблицы
+книги(books),авторы(authors),и совместная(bookaut).
+
+
+
+
+
+SELECT table1.name
+FROM
+    (
+    SELECT books.name,COUNT(bookaut.book_id) as count2 
+    FROM bookaut 
+    LEFT JOIN 
+        books ON books.id = bookaut.book_id 
+    GROUP BY books.name
+    )   as table1 
+ WHERE
+     table1.count2 >= 3 

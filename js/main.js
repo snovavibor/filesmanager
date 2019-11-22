@@ -4,16 +4,13 @@
 
 $(document).ready( function(){
 $('.short').each( function(){
-    $(this).on('dblclick', (e)=>{
-    
-       e.preventDefault();
-       let target = $(this).data('name');       
-       console.log(target);
+    $(this).on('dblclick', (e)=>{    
+       e.preventDefault();     
         $.ajax({
             type: 'POST',
             url: 'functions.php',
             data: {
-                el: target,
+                el: $(this).data('name'),
                 action: 'render'
             },
             success:function(result){
